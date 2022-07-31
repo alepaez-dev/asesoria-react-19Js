@@ -6,11 +6,11 @@ import './index.css';
 // Un componente recibe como parametro las propiedades -> objeto
 
 // Destructarion
-const Button = ({ text, className, agregarAlCarrito }) => {
+const Button = ({ text, className, onClick }) => {
 
   // border-black + lo que sea qiue le mande
   return (
-    <button onClick={agregarAlCarrito} className={`primary-button ${className}`} >{text}</button>
+    <button onClick={onClick} className={`primary-button ${className}`} >{text}</button>
   )
 }
 

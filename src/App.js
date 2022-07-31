@@ -68,7 +68,6 @@ function App() {
 
   return (
     <div>
-
       <Button 
         text="Aplica hoy"
         className="border-white"
@@ -76,17 +75,17 @@ function App() {
       <Button 
         text="Agregar al carrito"
         className="border-blue"
-        agregarAlCarrito={handlerAgregarAlCarrito}
+        onClick={handlerAgregarAlCarrito}
       />
       <Button 
         text="Koders"
         className="border-blue"
-        agregarAlCarrito={() => navigate("/koders")}
+        onClick={() => navigate("/koders")}
       />
       <Button 
         text="Mentores"
         className="border-blue"
-        agregarAlCarrito={() => navigate("/mentors")}
+        onClick={() => navigate("/mentors")}
       />
       <Text nombre={nombre} label="Nombre"/>
       <Input handleInputChange={handleNombreInputChange}/>
